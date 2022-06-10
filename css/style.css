@@ -28,6 +28,7 @@ body {
 .header {
     display: flex; 
     align-items: center;
+    padding: 24px 0 0;
 }
 
 .navigation {
@@ -58,13 +59,11 @@ body {
     margin-right: 50px;
 }
 
-.navigation-item:last-child {
-    margin-right: 330px;
-}
 
 .navigation-list,
 .contact-list {
     display: flex;
+    margin-left: auto;
 }
 
 
@@ -81,3 +80,109 @@ body {
 .contact-link {
     margin-right: 50px;
 }
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+/* hero */
+
+.hero {
+    background-color: var(--secondary-bgc);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-title {
+    width: 696px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.hero-button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border:none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* benefits */
+
+.benefits {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.benefits-title {
+    display: none;
+}
+
+
+.benefits-list {
+    display: flex;
+}
+
+.benefits-item {
+    width: 270px;
+}
+
+.benefits-item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.benefits-item-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+}
+
+/* work */
+
+.work {
+
+}
+
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+
+.work-list {
+    display: flex;
+}
+
+.work-item {
+    margin-right: 30px;
+}
+

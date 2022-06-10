@@ -32,24 +32,34 @@ body {
 
 .navigation {
     display: flex;
-    
+    align-items: center;
 }
 
 .logo {
     font-family: var(--secondary-font);
     text-decoration: none;
-    width: 145px;
-    left: 215px;
-    top: 24px;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
     color: #000000;
+
 }
 
 .logo-part {
     color: var(--accent-color);
+}
+
+.navigation-item:first-child {
+    margin-left: 94px;
+}
+
+.navigation-item {
+    margin-right: 50px;
+}
+
+.navigation-item:last-child {
+    margin-right: 330px;
 }
 
 .navigation-list,
@@ -66,4 +76,8 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
+}
+
+.contact-link {
+    margin-right: 50px;
 }

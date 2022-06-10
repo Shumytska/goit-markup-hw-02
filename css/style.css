@@ -1,5 +1,69 @@
-body {
-    font-family: 'Roboto', sans-serif;
+:root {
+    --primary-color: #757575;
+    --secondary-color: #212121;
+    --accent-color: #2196F3;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primary-bgc: #E5E5E5;
+    --secondary-bgc: #2F303A;
+    --primary-fsz: 14px;
 }
-/* шрифт для лого
- font-family: 'Raleway', sans-serif; */
+
+body {
+    font-size: var(--primary-fsz);
+    font-family: var(--primary-font);
+}
+
+.list {
+    list-style: none;
+}
+
+.content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    display: flex; 
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    
+}
+
+.logo {
+    font-family: var(--secondary-font);
+    text-decoration: none;
+    width: 145px;
+    left: 215px;
+    top: 24px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo-part {
+    color: var(--accent-color);
+}
+
+.navigation-list,
+.contact-list {
+    display: flex;
+}
+
+
+.navigation-link,
+.contact-link {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}

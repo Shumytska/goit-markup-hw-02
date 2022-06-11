@@ -242,6 +242,7 @@ body {
 /* projects */
 
 .projects {
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -252,6 +253,7 @@ body {
 .filters {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .filters-item {
@@ -286,7 +288,30 @@ body {
 }
 
 .project-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.project-list-item {
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+}
+
+.project-list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-color);
+}
+
+.project-list-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
 }
 
 /* footer */

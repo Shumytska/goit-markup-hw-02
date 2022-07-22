@@ -80,9 +80,10 @@ body {
 .navigation-link {
     color: var(--secondary-color);
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .navigation-link.current {
@@ -92,7 +93,7 @@ body {
 .contact-link {
     color: var(--primary-color);
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     margin-right: 50px;
@@ -140,7 +141,16 @@ body {
     padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #188CE8;
+}
+
+.hero-button:focus {
+    background-color: #188CE8;
 }
 
 /* benefits */
@@ -150,8 +160,17 @@ body {
     margin: 0 auto;
 }
 
-.benefits-title {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 
@@ -166,7 +185,7 @@ body {
 .benefits-item-title {
     font-size: 14px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
     color: var(--secondary-color);
 }
@@ -185,7 +204,7 @@ body {
 .work-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     color: var(--secondary-color);
 }
@@ -209,7 +228,7 @@ body {
 .team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     color: var(--secondary-color);
 }
@@ -231,7 +250,7 @@ body {
 .team-item-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
     color: var(--secondary-color);
 }
@@ -239,7 +258,7 @@ body {
 .team-item-job {
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
 }
 
@@ -248,10 +267,6 @@ body {
 .projects {
     margin: 0 auto;
     align-items: center;
-}
-
-.projects-title {
-    display: none;
 }
 
 .filters {
@@ -274,9 +289,23 @@ body {
     line-height: 1.62;
     text-align: center;
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .filters-item-btn:hover {
+    padding: 6px 22px;
+    border: none;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--color-logo-white);
+}
+
+.filters-item-btn:focus {
     padding: 6px 22px;
     border: none;
     background: var(--accent-color);
@@ -342,7 +371,7 @@ body {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     color: var(--color-logo-white);
     text-decoration: none;
     margin-left: 20px;
@@ -356,8 +385,12 @@ body {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
-     line-height: 1.71;
+    line-height: 1.71;
     color: var(--color-logo-white);
+}
+
+.footer-list-link:hover {
+    color: var(--accent-color);
 }
 
 .footer-list-contact {
@@ -366,4 +399,8 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list-contact:hover {
+    color: var(--accent-color);
 }
